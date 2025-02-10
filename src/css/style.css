@@ -4,19 +4,19 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    background: url(../images/bg-repeat.jpg);
-    background-position: center; 
-    background-size: 100% 100%;
+	background: url(../images/bg-repeat.jpg);
+	background-position: center;
+	background-size: 100% 100%;
 }
 
 .container {
-    margin: 2%;
+	margin: 2%;
 	display: grid;
 	grid:
-    "duvidas forms" 100%
-    /  minmax(300px, 650px) minmax(340px, 550px);
+		"duvidas forms" 100%
+		/ minmax(300px, 650px) minmax(340px, 550px);
 	justify-content: space-around;
-    gap: 20px;
+	gap: 20px;
 }
 
 .duvidas {
@@ -28,7 +28,7 @@ body {
 }
 
 .duvidas h1 {
-    font-size: 40px;
+	font-size: 40px;
 }
 
 .duvidas p {
@@ -43,56 +43,70 @@ body {
 .forms {
 	grid-area: forms;
 	display: flex;
-    padding: 25px 0;
-    margin: auto 0;
+	padding: 25px 0;
+	margin: auto 0;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    background-color: #FFFFFF;
-    gap: 15px;
+	background-color: #ffffff;
+	gap: 15px;
 }
 
-
 .forms input {
-    font-size: 25px;
-    width: 90%;
-    min-height: 35px;
+	font-size: 25px;
+	width: 90%;
+	min-height: 35px;
 	height: 60px;
-    padding: 2%;
-	border-width: 1px;
+	padding: 2%;
+	/* border-width: 1px; */
+	/* border: 1px solid; */
 	border-radius: 5px;
-    outline: 0;
+	outline: 0;
 }
 
 .forms textarea {
-    width: 90%;
-    font-size: 25px;
-    padding: 2%;
+	width: 90%;
+	font-size: 25px;
+	padding: 2%;
 	height: 100px;
-	border-width: 1px;
+	/* border-width: 1px; */
+	/* border: 1px solid; */
 	border-radius: 5px;
-    resize: none; 
-    outline: 0;
+	resize: none;
+	outline: 0;
 }
 
 .forms p {
-    width: 90%;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 17.58px;
-    margin-top: -10px; 
-    text-align: left; 
+	width: 90%;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 17.58px;
+	margin-top: -10px;
+	text-align: left;
 }
 
-
 .forms button {
-    width: 90%;
-    margin-top: 10px;
-    font-size: 25px;
-    color: #FFFFFF;
+	width: 90%;
+	margin-top: 10px;
+	font-size: 25px;
+	color: #ffffff;
 	height: 60px;
 	border-radius: 5px;
-    background-color: #3CCC87;
-    border: none;
-    cursor: pointer;
+	background-color: #3ccc87;
+	border: none;
+	cursor: pointer;
+}
+
+/* style for js */
+
+.borda-padrao {
+	border: 1px solid #000000;
+}
+
+.campo-vazio {
+	border: 1px solid #f52e2e;
+}
+
+.campo-preenchido {
+	border: 1px solid #00c22b;
 }

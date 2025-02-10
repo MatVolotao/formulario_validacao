@@ -56,14 +56,15 @@
 
 @media screen and (max-width: 660px) {
 	body {
-		align-items: normal;
-        justify-content: flex-start;
+		display: block;
 	}
 
 	.container {
+        height: 100%;
+        margin: 0;
 		grid:
-			"duvidas" 35%
-			"forms" 65%
+			"duvidas" 30%
+			"forms" 1fr
 			/ auto;
             gap: 0;
 	}
@@ -72,6 +73,7 @@
         font-size: 25px;
         line-height: 30px;
         height: auto;
+
     }
 
     .duvidas p {
@@ -85,8 +87,9 @@
     }
 
 	.forms {
-		height: auto;
+		height: 100%;
 		margin: 0;
+        padding: 0;
 	}
 
     .forms input, .forms textarea, .forms p, .forms button{
@@ -94,5 +97,8 @@
         font-size: 20px;
     }
 
+    .forms button {
+        margin: 0;
+    }
 
 }

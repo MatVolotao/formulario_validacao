@@ -20,14 +20,15 @@
             <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
         </section>
         <form class="forms">
-            <input type="text" name="nome" id="nome" placeholder="Nome completo *">
-            <input type="email" name="email" id="email" placeholder="Email *">
-            <input type="tel" id="phone" name="phone" placeholder="Telefone" pattern="\(\d{2}\)\s?\d{5}-\d{4}">
-            <textarea name="mensagem" placeholder="Mensagem *"></textarea>
+            <input class="formulario borda-padrao" type="text" name="nome" id="nome" placeholder="Nome completo *">
+            <input class="formulario borda-padrao" type="email" name="email" id="email" placeholder="Email *">
+            <input class="formulario borda-padrao" type="tel" id="phone" name="phone" placeholder="Telefone" pattern="\(\d{2}\)\s?\d{5}-\d{4}">
+            <textarea class="formulario borda-padrao" name="mensagem" placeholder="Mensagem *"></textarea>
             <p>*campos obrigatórios </p>
-            <button type="submit">Enviar</button>
+            <button id="enviar" type="button">Enviar</button>
         </form>
     </div><!-- container -->
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>
