@@ -1,0 +1,97 @@
+@media screen and (max-width: 935px) {
+	.container {
+		grid:
+			"duvidas forms" 100%
+			/ 300px 340px;
+		margin: 0;
+		gap: 10px;
+	}
+
+	.duvidas h1 {
+		font-size: 20px;
+		line-height: 23.44px;
+		height: 46px;
+	}
+
+	.duvidas p {
+		font-size: 15px;
+		line-height: 17.58px;
+		height: 54px;
+	}
+	.forms {
+		height: 378px;
+	}
+
+	.forms input,
+	.forms textarea,
+	.forms p,
+	.forms button {
+		width: 298px;
+	}
+
+	.forms input,
+	.forms textarea,
+	.forms button {
+		font-size: 20px;
+	}
+
+	.forms input,
+	.forms textarea,
+	.forms p {
+		height: 35px;
+	}
+
+	.forms p {
+		font-size: 15px;
+	}
+
+	.forms textarea {
+		height: 100px;
+	}
+
+	.forms button {
+		height: 41px;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	body {
+		align-items: normal;
+	}
+
+	.container {
+		grid:
+			"duvidas" 35%
+			"forms" 65%
+			/ auto;
+            gap: 0;
+	}
+
+    .duvidas h1 {
+        font-size: 25px;
+        line-height: 30px;
+        height: auto;
+    }
+
+    .duvidas p {
+        font-size: 20px;
+        line-height: 25px;
+        height: 54px;
+    }
+
+    .duvidas p,.duvidas h1{
+        text-align: center;
+    }
+
+	.forms {
+		height: auto;
+		margin: 0;
+	}
+
+    .forms input, .forms textarea, .forms p, .forms button{
+        width: 95%;
+        font-size: 20px;
+    }
+
+
+}

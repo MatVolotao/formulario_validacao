@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simples Formulario com javascript | css | html">
+    <meta name="keywords" content="Formulario,Validação">
+    <meta name="author" content="Matheus S. Volotão">
+    <title>Formulario de Validação</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/mediaqueries.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="duvidas">
+            <h1>FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h1>
+            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </section>
+        <form class="forms">
+            <input type="text" name="nome" id="nome" placeholder="Nome completo *">
+            <input type="email" name="email" id="email" placeholder="Email *">
+            <input type="tel" id="phone" name="phone" placeholder="Telefone" pattern="\(\d{2}\)\s?\d{5}-\d{4}">
+            <textarea name="mensagem" placeholder="Mensagem *"></textarea>
+            <p>*campos obrigatórios </p>
+            <button type="submit">Enviar</button>
+        </form>
+    </div><!-- container -->
+</body>
+
+</html>

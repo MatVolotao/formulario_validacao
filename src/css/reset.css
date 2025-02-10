@@ -1,0 +1,44 @@
+/* ------------------- */
+/* Reset Melhorado     */
+/* ------------------- */
+
+/* 1. Melhorar o box-sizing */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 2. Remover margens e paddings padrão */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* 3. Ajustar corpo */
+body,
+html {
+	height: 100%;
+}
+
+/* font */
+* {
+	font-family: "Roboto";
+}
+
+
+/* 5. Herdar fontes para controles de formulário */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 6. Remover estilos padrão de listas */
+ul,
+ol {
+	list-style: none;
+}
+
+

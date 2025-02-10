@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background: url(../images/bg-repeat.jpg);
+    background-position: center; 
+    background-size: 100% 100%;
+}
+
+.container {
+    margin: 2%;
+	display: grid;
+	grid:
+    "duvidas forms" 100%
+    /  minmax(300px, 650px) minmax(340px, 550px);
+	justify-content: space-around;
+    gap: 20px;
+}
+
+.duvidas {
+	display: flex;
+	grid-area: duvidas;
+	flex-direction: column;
+	gap: 2%;
+	justify-content: center;
+}
+
+.duvidas h1 {
+    font-size: 40px;
+}
+
+.duvidas p {
+	font-size: 30px;
+}
+
+.duvidas p,
+.duvidas h1 {
+	color: white;
+}
+
+.forms {
+	grid-area: forms;
+	display: flex;
+    padding: 25px 0;
+    margin: auto 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    background-color: #FFFFFF;
+    gap: 15px;
+}
+
+
+.forms input {
+    font-size: 25px;
+    width: 90%;
+    min-height: 35px;
+	height: 60px;
+    padding: 2%;
+	border-width: 1px;
+	border-radius: 5px;
+    outline: 0;
+}
+
+.forms textarea {
+    width: 90%;
+    font-size: 25px;
+    padding: 2%;
+	height: 100px;
+	border-width: 1px;
+	border-radius: 5px;
+    resize: none; 
+    outline: 0;
+}
+
+.forms p {
+    width: 90%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 17.58px;
+    margin-top: -10px; 
+    text-align: left; 
+}
+
+
+.forms button {
+    width: 90%;
+    margin-top: 10px;
+    font-size: 25px;
+    color: #FFFFFF;
+	height: 60px;
+	border-radius: 5px;
+    background-color: #3CCC87;
+    border: none;
+    cursor: pointer;
+}
